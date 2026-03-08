@@ -3,55 +3,47 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Legacy Financial Services</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
-      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    <title>Document</title>
     <link rel="stylesheet" href="css/style.css" />
-    <link
-      rel="shortcut icon"
-      href="images/icon_no_bg.png"
-      type="images/x-icon"
-    />
   </head>
   <body>
-    <nav class="navbar">
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="logo" />
-          </a>
-        </div>
-        <div class="main-menu">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="services.html">Services</a>
-            </li>
-            <li>
-              <a href="about.html">About</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </div>
+    <!-- Hero -->
+    <section class="et-hero-tabs">
+      <h1>STICKY SLIDER NAV</h1>
+      <h3>Sliding content with sticky tab nav</h3>
+      <div class="et-hero-tabs-container">
+        <a class="et-hero-tab" href="#tab-es6">ES6</a>
+        <a class="et-hero-tab" href="#tab-flexbox">Flexbox</a>
+        <a class="et-hero-tab" href="#tab-react">React</a>
+        <a class="et-hero-tab" href="#tab-angular">Angular</a>
+        <a class="et-hero-tab" href="#tab-other">Other</a>
+        <span class="et-hero-tab-slider"></span>
       </div>
-    </nav>
+    </section>
 
+    <!-- Main -->
+    <main class="et-main">
+      <section class="et-slide" id="tab-es6">
+        <h1>ES6</h1>
+        <h3>something about es6</h3>
+      </section>
+      <section class="et-slide" id="tab-flexbox">
+        <h1>Flexbox</h1>
+        <h3>something about flexbox</h3>
+      </section>
+      <section class="et-slide" id="tab-react">
+        <h1>React</h1>
+        <h3>something about react</h3>
+      </section>
+      <section class="et-slide" id="tab-angular">
+        <h1>Angular</h1>
+        <h3>something about angular</h3>
+      </section>
+      <section class="et-slide" id="tab-other">
+        <h1>Other</h1>
+        <h3>something about other</h3>
+      </section>
+    </main>
     <script src="js/main.js"></script>
   </body>
 </html>
