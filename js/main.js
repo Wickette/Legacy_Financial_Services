@@ -5,9 +5,9 @@ class StickyNavigation {
 		this.currentTab = null;
 		this.tabContainerHeight = 70;
 		let self = this;
-		$('.et-hero-tab').click(function() { 
-			self.onTabClick(event, $(this)); 
-		});
+		$('.et-hero-tab').click(function(e) { // Pass 'e' here
+    self.onTabClick(e, $(this));      // Use 'e' here
+});
 		$(window).scroll(() => { this.onScroll(); });
 		$(window).resize(() => { this.onResize(); });
 	}
@@ -59,17 +59,19 @@ class StickyNavigation {
 		}
 	}
 	
-	setSliderCss() {
-		let width = 0;
-		let left = 0;
-		if(this.currentTab) {
-			width = this.currentTab.css('width');
-			left = this.currentTab.offset().left;
-		}
-		$('.et-hero-tab-slider').css('width', width);
-		$('.et-hero-tab-slider').css('left', left);
-	}
+setSliderCss() {
+    let width = 0;
+    let left = 0;
+    if(this.currentTab) {
+        width = this.currentTab.outerWidth(); // Use outerWidth
+        left = this.currentTab.offset().left;
+    }
+    $('.et-hero-tab-slider').css('width', width);
+    $('.et-hero-tab-slider').css('left', left);
+}
 	
 }
 
-new StickyNavigation();
+$(document).ready(function() {
+    new StickyNavigation();
+});
